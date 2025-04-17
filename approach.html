@@ -1,0 +1,906 @@
+<<<<<<< HEAD
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>prediCrop - Approach</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e616f0ccb0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .marquee-container {
+            height: 200px;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            top: 100%;
+        }
+
+        .navbar {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        .navbar-nav a:hover {
+            background-color: rgb(129, 132, 129);
+            border-bottom: 1px solid rgb(8, 8, 8);
+            color: black;
+            border-radius: 5px;
+        }
+
+        .nav-item a:hover {
+            border-bottom: 1px solid white;
+        }
+
+        .site-footer {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #252b32;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .site-footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+
+        .social-footer {
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-menu li,
+        .social-footer li {
+            list-style-type: none;
+        }
+
+        .footer-menu a,
+        .social-footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .social-footer i {
+            color: #fff;
+        }
+
+        .social-footer .icon {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-size: cover;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        body {
+            background-color: #19231b;
+        }
+
+        #questions {
+            background-color: #369c1d;
+        }
+
+        #questions li {
+            list-style-type: none;
+        }
+        #img{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            margin-left: 80px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            
+        }
+    </style>
+</head>
+
+<body>
+       <nav class="navbar navbar-expand-lg bg-dark text-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="D:\ProjectCrop\home.html"
+                style="text-decoration: none; color: white; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                <i class="fa-solid fa-wheat-awn fa-2xl" style="color: #63E6BE;"></i> <span
+                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">predi</span>Crop
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item p-2">
+                        <a href="D:\ProjectCrop\approach.html" class="nav-link text-light"
+                            style="text-decoration: none;">Approach</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href="D:\ProjectCrop\about.html" class="nav-link text-light"
+                            style="text-decoration: none;">We are</a>
+                    </li>
+                    <li class="nav-item dropdown p-2">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" id="navbarDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="tel:7559436918"><i
+                                        class="fa-brands fa-pagelines fa-sm"></i> Crop
+                                    &nbsp;<button type="button" class="btn btn-primary"
+                                        style="--bs-btn-padding-y: .20rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .50rem;">
+                                        Call
+                                    </button></a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-regular fa-gem fa-sm"></i> Forest</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-globe fa-sm"></i> Land</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown p-2">
+                        <a class="nav-link dropdown-toggle text-light" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" href="#" id="dropdownMenuButton">
+                            Language
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div id="google_element"></div>
+                            <!-- <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">English</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('fr')">French</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('es')">Spanish</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('hi')">Hindi</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('mr')">Marathi</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('pa')">Punjabi</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('sd')">Sindhi</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item p-2">
+                      <a href="D:\ProjectCrop\options.html" class="nav-link text-danger"
+                      style="text-decoration: none;">Predict</a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container my-3 mb-4" id="container">
+        <div class="row my-4">
+        </div>
+        <div class="row">
+            <div class="col my-4">
+                <h4 class="text-success my-4 ml-3"
+                    style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 60px;">
+                    Approaches <hr></h4>
+            </div>
+            
+            <div class="col">
+                <img src="https://eos.com/wp-content/uploads/2024/03/card-asma.svg" alt="not found" srcset="">
+                <!-- <img src="https://miro.medium.com/v2/resize:fit:602/1*zd4oaXqR5Izsgp0TYMRpGw.png" alt=""> -->
+                <!-- <img src="https://eos.com/wp-content/uploads/2022/10/img-1.png.webp" alt=""> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row"><h1 class="text-center text-light p-2" style="font-size: x-large;">Key Features</h1></div>
+        <div class="row">
+            <div class="col">
+                <img src="https://framerusercontent.com/images/VZ7DWL6eOQnpfK44b1xjRhXJXw.jpeg" alt="not found" srcset="" id="img">
+                <p class="text-center text-light my-2">Crop prediction</p>
+            </div>
+            <div class="col">
+                <img src="https://www.bhg.com/thmb/yoa-gJvBBPmwHqV8e7qQ7reNsGA=/1983x0/filters:no_upscale():strip_icc()/Fertilizing-plants-0440837aeee64749832645ba62572f95.jpg" alt="" srcset="" id="img">
+                <p class="text-center text-light my-2">Fertilizer suggestion</p>
+            </div>
+            <div class="col">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEjM6l2AMcccqHvs9-MIlDcljuokwec0T9uTkA2PpHqg&s" alt="" srcset="" id="img">
+                <p class="text-center text-light my-2">Weather forecast</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h1 class="text-light my-3 mb-3" style="font-size: 40px;">Proposed System</h1>
+        <div class="row">
+
+            <div class="col"></div>
+            <div class="col"></div>
+            
+        </div>
+    </div>
+
+
+    <div class="container p-2 rounded">
+        <p class="text-center text-danger p-2" style="font-size: 30px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">UNDERSTAND BY GRAPH</p>
+        <hr style="color: white;">
+        <div class="row">
+            <div class="col-12 mb-2 mx-5">
+                <img src="D:\ProjectCrop\s1.png" alt="">
+            </div>
+            <div class="col-6">
+                <img src="D:\ProjectCrop\s2.png" alt="">
+            </div>
+            <div class="col-6">
+                <img src="D:\ProjectCrop\s3.jpeg" alt="" srcset="">
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+    <div class="container my-3 p-3 rounded" id="questions">
+        <h1 class="text-light text-danger" style="font-size: 60px;">Frequently Asked Questions</h1>
+        <hr style="color: white;">
+        <ul class="my-4">
+            <li class="my-2">
+                <h5 class="d-inline-flex gap-1 text-light">
+                    How this website helps farmers problems <span role="button" data-bs-toggle="collapse" aria-expanded="false"
+                        aria-controls="collapseExample" href="#collapseExample"><i class="fa-solid fa-chevron-down mx-2"></i></span>
+                </h5>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body" style="background-color: #183f0e; color: #fff;">
+                        There are three major problems of farmers which are crop forecasting,fertilizer recommendations and weather forecasting and we solve those problems here. We also focus on the responsibility of farmers to see how they play a key role in the real world.
+                    </div>
+                </div>
+            </li>
+            <li class="my-2">
+                <h5 class="d-inline-flex gap-1 text-light">
+                    What are the advantages of this website? <span role="button" data-bs-toggle="collapse" aria-expanded="false"
+                        aria-controls="collapseExample1" href="#collapseExample1"><i class="fa-solid fa-chevron-down mx-2"></i></span>
+                </h5>
+                <div class="collapse" id="collapseExample1">
+                    <div class="card card-body" style="background-color: #183f0e; color: #fff;">
+                        You get multiple facilities like how much fertilizer farmers used in their crop and what crop they grow in their particular region etc..
+                    </div>
+                </div>
+            </li>
+            <li class="my-2">
+                <h5 class="d-inline-flex gap-1 text-light">
+                     May work in different districts or states?<span role="button" data-bs-toggle="collapse" aria-expanded="false"
+                        aria-controls="collapseExample2" href="#collapseExample2"><i class="fa-solid fa-chevron-down mx-2"></i></span>
+                </h5>
+                <div class="collapse" id="collapseExample2">
+                    <div class="card card-body" style="background-color: #183f0e; color: #fff;">
+                        Yes we understand your point which solves in different states of India and provides first rate facility.
+                    </div>
+                </div>
+            </li>
+            <li class="my-2">
+                <h5 class="d-inline-flex gap-1 text-light">
+                   How do you handle the technology trend? <span role="button" data-bs-toggle="collapse" aria-expanded="false"
+                        aria-controls="collapseExample3" href="#collapseExample3"><i class="fa-solid fa-chevron-down mx-2"></i></span>
+                </h5>
+                <div class="collapse" id="collapseExample3">
+                    <div class="card card-body" style="background-color: #183f0e; color: #fff;">
+                        We use a forward-looking approach to generate a linear technology trend for each crop and each geography (county, state, national).  Specifically, we combine linear trend estimates based on the past 20, 30, and 40 years (when available) to obtain a single best estimate of the trend.  We also use a median regression approach, rather than least squares regression, so that the trend estimates are not overly affected by outlier years.
+                    </div>
+                </div>
+            </li>
+            <li class="my-2">
+                <h5 class="d-inline-flex gap-1 text-light">
+                    You can add international regions? <span role="button" data-bs-toggle="collapse" aria-expanded="false"
+                        aria-controls="collapseExample4" href="#collapseExample4"><i class="fa-solid fa-chevron-down mx-2"></i></span>
+                </h5>
+                <div class="collapse" id="collapseExample4">
+                    <div class="card card-body" style="background-color: #183f0e; color: #fff;">
+                        In principle, yes, and we plan to add yield and production forecasts for Brazil and Argentina in time for the southern hemisphere summer of 2027/2028.  We have excellent weather and satellite data for international yield modeling, but it is challenging to obtain long-term local yield data for building our statistical models.  We expect to bridge this gap in data resources by applying CropProphet to downscale existing yield data, with additional constraints based on satellite crop analysis.
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+   <footer class="site-footer">
+        <div class="container rd-section-center">
+            <div class="site-footer-inner">
+                <nav>
+                    <ul class="footer-menu">
+                        <li class="mb-3"><b style="color: #369c1d; font-size: 30px;">Headquaters</b></li>
+                        <li></li>
+                        <li><a href="">Symboisis Distance Learning</a></li>
+                        <li><a href="">Ganeshkhindi road,</a></li>
+                        <li><a href="">Pune Maharashtra - 411011</a></li>
+                    </ul>
+                </nav>
+
+                <nav>
+                    <h2 class="mx-2 text-center" style="font-family: Arial, Helvetica, sans-serif;">Connect With Us</h2> <a href="tel:+7559436918" style="text-decoration: none;" class="text-center mb-2 mx-2 text-danger"><span style="font-size: 20px;">+91</span>-7559436918</a>
+                    <ul class="social-footer">
+                        
+                        <li>
+                            <div class="vr"></div>
+                            <i class="fa-brands fa-facebook mx-2"></i>
+                        </li>
+                        <li>
+                            <div class="vr"></div>
+                            <i class="fa-brands fa-instagram mx-2"></i>
+                        </li>
+                        <li>
+                            <div class="vr"></div>
+                            <i class="fa-brands fa-youtube mx-2"></i>
+                        </li>
+                        <li>
+                            <div class="vr"></div>
+                            <i class="fa-brands fa-google mx-2"></i>
+                        </li>
+                        <li>
+                            <div class="vr"></div>
+                            <i class="fa-brands fa-twitter mx-2"></i>
+
+                        </li>
+
+                    </ul>
+                    
+                </nav>
+            </div>
+            <div>
+                <hr class="divider text-light">
+            </div>
+            <div class="copyright"> <span>© 2024</span> <span>Crop Predict,Inc.</span><span> All rights
+                    reserved.</span> </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+
+
+
+
+        function loadGoogleTranslate() {
+            const script = document.createElement('script');
+            script.src = 'http://translate.google.com/translate_a/element.js?cb=initializeGoogleTranslate';
+            document.body.appendChild(script);
+        }
+
+        function initializeGoogleTranslate() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,fr,es,hi,mr,pa,sd,gu,as,bn,kn,ml,ta,te'
+            }, 'google_element');
+        }
+
+        function setLanguage(langCode) {
+            const translateElement = new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_element');
+            const select = translateElement.h;  // Accessing the dropdown
+            if (select) {
+                for (let i = 0; i < select.options.length; i++) {
+                    if (select.options[i].value === langCode) {
+                        select.selectedIndex = i;
+                        const event = new Event('change');
+                        select.dispatchEvent(event);
+                        break;
+                    }
+                }
+            }
+        }
+
+        window.onload = loadGoogleTranslate;
+
+
+
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybBogGzB6AWAc1K6X17f3zOfI58Pp6Uj0BijF5BhacQEH5L8k" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-qP1M0E/+HHk8cV0iILuPsw+dPOGFNA4MzWZQ+SHtEfvYFQf0xS3p8gsLAPL8OB8p" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-qP1M0E/+HHk8cV0iILuPsw+dPOGFNA4MzWZQ+SHtEfvYFQf0xS3p8gsLAPL8OB8p" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+=======
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>prediCrop - Approach</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e616f0ccb0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .marquee-container {
+            height: 200px;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            top: 100%;
+        }
+
+        .navbar {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        .navbar-nav a:hover {
+            background-color: rgb(129, 132, 129);
+            border-bottom: 1px solid rgb(8, 8, 8);
+            color: black;
+            border-radius: 5px;
+        }
+
+        .nav-item a:hover {
+            border-bottom: 1px solid white;
+        }
+
+        .site-footer {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #252b32;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .site-footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+
+        .social-footer {
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-menu li,
+        .social-footer li {
+            list-style-type: none;
+        }
+
+        .footer-menu a,
+        .social-footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .social-footer i {
+            color: #fff;
+        }
+
+        .social-footer .icon {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-size: cover;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        body {
+            background-color: #19231b;
+        }
+
+        #questions {
+            background-color: #369c1d;
+        }
+
+        #questions li {
+            list-style-type: none;
+        }
+        #img{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            margin-left: 80px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            
+        }
+    </style>
+</head>
+
+<body>
+       <nav class="navbar navbar-expand-lg bg-dark text-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="D:\ProjectCrop\home.html"
+                style="text-decoration: none; color: white; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                <i class="fa-solid fa-wheat-awn fa-2xl" style="color: #63E6BE;"></i> <span
+                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">predi</span>Crop
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item p-2">
+                        <a href="D:\ProjectCrop\approach.html" class="nav-link text-light"
+                            style="text-decoration: none;">Approach</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href="D:\ProjectCrop\about.html" class="nav-link text-light"
+                            style="text-decoration: none;">We are</a>
+                    </li>
+                    <li class="nav-item dropdown p-2">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" id="navbarDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="tel:7559436918"><i
+                                        class="fa-brands fa-pagelines fa-sm"></i> Crop
+                                    &nbsp;<button type="button" class="btn btn-primary"
+                                        style="--bs-btn-padding-y: .20rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .50rem;">
+                                        Call
+                                    </button></a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-regular fa-gem fa-sm"></i> Forest</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-globe fa-sm"></i> Land</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown p-2">
+                        <a class="nav-link dropdown-toggle text-light" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" href="#" id="dropdownMenuButton">
+                            Language
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div id="google_element"></div>
+                            <!-- <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">English</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('fr')">French</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('es')">Spanish</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('hi')">Hindi</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('mr')">Marathi</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('pa')">Punjabi</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('sd')">Sindhi</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item p-2">
+                      <a href="D:\ProjectCrop\options.html" class="nav-link text-danger"
+                      style="text-decoration: none;">Predict</a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container my-3 mb-4" id="container">
+        <div class="row my-4">
+        </div>
+        <div class="row">
+            <div class="col my-4">
+                <h4 class="text-success my-4 ml-3"
+                    style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 60px;">
+                    Approaches <hr></h4>
+            </div>
+            
+            <div class="col">
+                <img src="https://eos.com/wp-content/uploads/2024/03/card-asma.svg" alt="not found" srcset="">
+                <!-- <img src="https://miro.medium.com/v2/resize:fit:602/1*zd4oaXqR5Izsgp0TYMRpGw.png" alt=""> -->
+                <!-- <img src="https://eos.com/wp-content/uploads/2022/10/img-1.png.webp" alt=""> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row"><h1 class="text-center text-light p-2" style="font-size: x-large;">Key Features</h1></div>
+        <div class="row">
+            <div class="col">
+                <img src="https://framerusercontent.com/images/VZ7DWL6eOQnpfK44b1xjRhXJXw.jpeg" alt="not found" srcset="" id="img">
+                <p class="text-center text-light my-2">Crop prediction</p>
+            </div>
+            <div class="col">
+                <img src="https://www.bhg.com/thmb/yoa-gJvBBPmwHqV8e7qQ7reNsGA=/1983x0/filters:no_upscale():strip_icc()/Fertilizing-plants-0440837aeee64749832645ba62572f95.jpg" alt="" srcset="" id="img">
+                <p class="text-center text-light my-2">Fertilizer suggestion</p>
+            </div>
+            <div class="col">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEjM6l2AMcccqHvs9-MIlDcljuokwec0T9uTkA2PpHqg&s" alt="" srcset="" id="img">
+                <p class="text-center text-light my-2">Weather forecast</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h1 class="text-light my-3 mb-3" style="font-size: 40px;">Proposed System</h1>
+        <div class="row">
+
+            <div class="col"></div>
+            <div class="col"></div>
+            
+        </div>
+    </div>
+
+
+    <div class="container p-2 rounded">
+        <p class="text-center text-danger p-2" style="font-size: 30px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">UNDERSTAND BY GRAPH</p>
+        <hr style="color: white;">
+        <div class="row">
+            <div class="col-12 mb-2 mx-5">
+                <img src="D:\ProjectCrop\s1.png" alt="">
+            </div>
+            <div class="col-6">
+                <img src="D:\ProjectCrop\s2.png" alt="">
+            </div>
+            <div class="col-6">
+                <img src="D:\ProjectCrop\s3.jpeg" alt="" srcset="">
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+    <div class="container my-3 p-3 rounded" id="questions">
+        <h1 class="text-light text-danger" style="font-size: 60px;">Frequently Asked Questions</h1>
+        <hr style="color: white;">
+        <ul class="my-4">
+            <li class="my-2">
+                <h5 class="d-inline-flex gap-1 text-light">
+                    How this website helps farmers problems <span role="button" data-bs-toggle="collapse" aria-expanded="false"
+                        aria-controls="collapseExample" href="#collapseExample"><i class="fa-solid fa-chevron-down mx-2"></i></span>
+                </h5>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body" style="background-color: #183f0e; color: #fff;">
+                        There are three major problems of farmers which are crop forecasting,fertilizer recommendations and weather forecasting and we solve those problems here. We also focus on the responsibility of farmers to see how they play a key role in the real world.
+                    </div>
+                </div>
+            </li>
+            <li class="my-2">
+                <h5 class="d-inline-flex gap-1 text-light">
+                    What are the advantages of this website? <span role="button" data-bs-toggle="collapse" aria-expanded="false"
+                        aria-controls="collapseExample1" href="#collapseExample1"><i class="fa-solid fa-chevron-down mx-2"></i></span>
+                </h5>
+                <div class="collapse" id="collapseExample1">
+                    <div class="card card-body" style="background-color: #183f0e; color: #fff;">
+                        You get multiple facilities like how much fertilizer farmers used in their crop and what crop they grow in their particular region etc..
+                    </div>
+                </div>
+            </li>
+            <li class="my-2">
+                <h5 class="d-inline-flex gap-1 text-light">
+                     May work in different districts or states?<span role="button" data-bs-toggle="collapse" aria-expanded="false"
+                        aria-controls="collapseExample2" href="#collapseExample2"><i class="fa-solid fa-chevron-down mx-2"></i></span>
+                </h5>
+                <div class="collapse" id="collapseExample2">
+                    <div class="card card-body" style="background-color: #183f0e; color: #fff;">
+                        Yes we understand your point which solves in different states of India and provides first rate facility.
+                    </div>
+                </div>
+            </li>
+            <li class="my-2">
+                <h5 class="d-inline-flex gap-1 text-light">
+                   How do you handle the technology trend? <span role="button" data-bs-toggle="collapse" aria-expanded="false"
+                        aria-controls="collapseExample3" href="#collapseExample3"><i class="fa-solid fa-chevron-down mx-2"></i></span>
+                </h5>
+                <div class="collapse" id="collapseExample3">
+                    <div class="card card-body" style="background-color: #183f0e; color: #fff;">
+                        We use a forward-looking approach to generate a linear technology trend for each crop and each geography (county, state, national).  Specifically, we combine linear trend estimates based on the past 20, 30, and 40 years (when available) to obtain a single best estimate of the trend.  We also use a median regression approach, rather than least squares regression, so that the trend estimates are not overly affected by outlier years.
+                    </div>
+                </div>
+            </li>
+            <li class="my-2">
+                <h5 class="d-inline-flex gap-1 text-light">
+                    You can add international regions? <span role="button" data-bs-toggle="collapse" aria-expanded="false"
+                        aria-controls="collapseExample4" href="#collapseExample4"><i class="fa-solid fa-chevron-down mx-2"></i></span>
+                </h5>
+                <div class="collapse" id="collapseExample4">
+                    <div class="card card-body" style="background-color: #183f0e; color: #fff;">
+                        In principle, yes, and we plan to add yield and production forecasts for Brazil and Argentina in time for the southern hemisphere summer of 2027/2028.  We have excellent weather and satellite data for international yield modeling, but it is challenging to obtain long-term local yield data for building our statistical models.  We expect to bridge this gap in data resources by applying CropProphet to downscale existing yield data, with additional constraints based on satellite crop analysis.
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+   <footer class="site-footer">
+        <div class="container rd-section-center">
+            <div class="site-footer-inner">
+                <nav>
+                    <ul class="footer-menu">
+                        <li class="mb-3"><b style="color: #369c1d; font-size: 30px;">Headquaters</b></li>
+                        <li></li>
+                        <li><a href="">Symboisis Distance Learning</a></li>
+                        <li><a href="">Ganeshkhindi road,</a></li>
+                        <li><a href="">Pune Maharashtra - 411011</a></li>
+                    </ul>
+                </nav>
+
+                <nav>
+                    <h2 class="mx-2 text-center" style="font-family: Arial, Helvetica, sans-serif;">Connect With Us</h2> <a href="tel:+7559436918" style="text-decoration: none;" class="text-center mb-2 mx-2 text-danger"><span style="font-size: 20px;">+91</span>-7559436918</a>
+                    <ul class="social-footer">
+                        
+                        <li>
+                            <div class="vr"></div>
+                            <i class="fa-brands fa-facebook mx-2"></i>
+                        </li>
+                        <li>
+                            <div class="vr"></div>
+                            <i class="fa-brands fa-instagram mx-2"></i>
+                        </li>
+                        <li>
+                            <div class="vr"></div>
+                            <i class="fa-brands fa-youtube mx-2"></i>
+                        </li>
+                        <li>
+                            <div class="vr"></div>
+                            <i class="fa-brands fa-google mx-2"></i>
+                        </li>
+                        <li>
+                            <div class="vr"></div>
+                            <i class="fa-brands fa-twitter mx-2"></i>
+
+                        </li>
+
+                    </ul>
+                    
+                </nav>
+            </div>
+            <div>
+                <hr class="divider text-light">
+            </div>
+            <div class="copyright"> <span>© 2024</span> <span>Crop Predict,Inc.</span><span> All rights
+                    reserved.</span> </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+
+
+
+
+        function loadGoogleTranslate() {
+            const script = document.createElement('script');
+            script.src = 'http://translate.google.com/translate_a/element.js?cb=initializeGoogleTranslate';
+            document.body.appendChild(script);
+        }
+
+        function initializeGoogleTranslate() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,fr,es,hi,mr,pa,sd,gu,as,bn,kn,ml,ta,te'
+            }, 'google_element');
+        }
+
+        function setLanguage(langCode) {
+            const translateElement = new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_element');
+            const select = translateElement.h;  // Accessing the dropdown
+            if (select) {
+                for (let i = 0; i < select.options.length; i++) {
+                    if (select.options[i].value === langCode) {
+                        select.selectedIndex = i;
+                        const event = new Event('change');
+                        select.dispatchEvent(event);
+                        break;
+                    }
+                }
+            }
+        }
+
+        window.onload = loadGoogleTranslate;
+
+
+
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybBogGzB6AWAc1K6X17f3zOfI58Pp6Uj0BijF5BhacQEH5L8k" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-qP1M0E/+HHk8cV0iILuPsw+dPOGFNA4MzWZQ+SHtEfvYFQf0xS3p8gsLAPL8OB8p" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-qP1M0E/+HHk8cV0iILuPsw+dPOGFNA4MzWZQ+SHtEfvYFQf0xS3p8gsLAPL8OB8p" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+>>>>>>> 0e85c04 (Initial commit)
+</html>

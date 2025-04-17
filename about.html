@@ -1,0 +1,844 @@
+<<<<<<< HEAD
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>prediCrop - about</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e616f0ccb0.js" crossorigin="anonymous"></script>
+    <style>
+        .navbar {
+            position: -webkit-sticky;
+            /* For Safari */
+            position: sticky;
+            top: 0;
+            /* background-color: #636161; */
+            padding: 10px 0;
+            z-index: 1000;
+            /* Ensures the navbar is above other content */
+        }
+
+        .navbar-nav a:hover {
+            background-color: rgb(129, 132, 129);
+            border-bottom: 1px solid rgb(8, 8, 8);
+            color: black;
+            border-radius: 5px;
+        }
+
+        .nav-item a:hover {
+            border-bottom: 1px solid white;
+        }
+
+        .site-footer {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #252b32;
+            /* Example background color */
+            color: #fff;
+            /* Example text color */
+            padding: 20px 0;
+        }
+
+        .site-footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+
+        .social-footer {
+            display: flex;
+            gap: 15px;
+            /* Adjust spacing between items */
+        }
+
+        .footer-menu li,
+        .social-footer li {
+            list-style-type: none;
+        }
+
+        .footer-menu a,
+        .social-footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .social-footer i {
+            color: #fff;
+        }
+
+        .social-footer .icon {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-size: cover;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.1);
+            /* Optional: Change the border color of the button */
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+
+<body>
+     <nav class="navbar navbar-expand-lg bg-dark text-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="D:\ProjectCrop\home.html"
+                style="text-decoration: none; color: white; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                <i class="fa-solid fa-wheat-awn fa-2xl" style="color: #63E6BE;"></i> <span
+                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">predi</span>Crop
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item p-2">
+                        <a href="D:\ProjectCrop\approach.html" class="nav-link text-light"
+                            style="text-decoration: none;">Approach</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href="D:\ProjectCrop\about.html" class="nav-link text-light"
+                            style="text-decoration: none;">We are</a>
+                    </li>
+                    <li class="nav-item dropdown p-2">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" id="navbarDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="tel:7559436918"><i
+                                        class="fa-brands fa-pagelines fa-sm"></i> Crop
+                                    &nbsp;<button type="button" class="btn btn-primary"
+                                        style="--bs-btn-padding-y: .20rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .50rem;">
+                                        Call
+                                    </button></a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-regular fa-gem fa-sm"></i> Forest</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-globe fa-sm"></i> Land</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown p-2">
+                        <a class="nav-link dropdown-toggle text-light" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" href="#" id="dropdownMenuButton">
+                            Language
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div id="google_element"></div>
+                            <!-- <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">English</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('fr')">French</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('es')">Spanish</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('hi')">Hindi</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('mr')">Marathi</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('pa')">Punjabi</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('sd')">Sindhi</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item p-2">
+                      <a href="D:\ProjectCrop\options.html" class="nav-link text-danger"
+                      style="text-decoration: none;">Predict</a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <h1 class="p-2 text-center my-3">Who we are</h1>
+    <div class="container my-4 bg-dark text-light border rounded p-2 my-4">
+        <div class="row my-3 p-3">
+            <div class="row my-4"></div>
+            <div class="col flex-column text-center">
+                <img src="logo.jpg" alt="" srcset="" class=" rounded-circle">
+            </div>
+            <div class="col text-center">
+                <h1 class="text-center my-1 mb-2">
+                    About
+                </h1>
+                We are doing best with our farmers,This website will help you to better understand which type of
+                fertilizer do you need to grow crops, also help to forecaste and more knowldege and <a
+                    href="D:\ProjectCrop\help.html" style="text-decoration: none;">HELP</a> also!
+            </div>
+        </div>
+    </div>
+    <div class="container my-4">
+        <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+           WORKING POSTS
+        </h2>
+        <div class="row">
+
+            <div class="col-4 my-4">
+                <div class="card" style="width: 20rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsoEAMYKHiwI5JH_IlxayW3-9UurHlASFy9A&s"
+                        class="card-img-top" alt="..." style="height: 100px; width: 100px;">
+                    <div class="card-body">
+                        <h3 class="card-heading">
+                            Project Manager
+                        </h3>
+                        <p class="card-text" id="subText">The project manager ensures seamless coordination among team members and
+                            oversees the timely execution of tasks to enhance agricultural productivity and
+                            sustainability.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 my-4">
+                <div class="card" style="width: 20rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsoEAMYKHiwI5JH_IlxayW3-9UurHlASFy9A&s"
+                        class="card-img-top" alt="..." style="height: 100px; width: 100px;">
+                    <div class="card-body">
+                        <h3 class="card-heading">
+                            Team Lead
+                        </h3>
+                        <p class="card-text" id="subText">Consistently demonstrated exceptional ability to identify and resolve
+                            challenges, ensuring the successful deployment of innovative solutions to assist farmers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 my-4">
+                <div class="card" style="width: 20rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsoEAMYKHiwI5JH_IlxayW3-9UurHlASFy9A&s"
+                        class="card-img-top" alt="..." style="height: 100px; width: 100px;">
+                    <div class="card-body">
+                        <h3 class="card-heading">
+                            Developer
+                        </h3>
+                        <p class="card-text" id="subText">Developed a responsive, user-friendly web interface for an agricultural
+                            assistance application. Integrated interactive elements such as toasts to guide users and
+                            dynamically enable features based on user interactions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 my-4">
+                <div class="card" style="width: 20rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsoEAMYKHiwI5JH_IlxayW3-9UurHlASFy9A&s"
+                        class="card-img-top" alt="..." style="height: 100px; width: 100px;">
+                    <div class="card-body">
+                        <h3 class="card-heading">
+                            Tester
+                        </h3>
+                        <p class="card-text" id="subText">Ensure that the prediction and suggestion buttons are only enabled after
+                            the corresponding information toast has been read and displayed to the user.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 my-4">
+                <div class="card" style="width: 20rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsoEAMYKHiwI5JH_IlxayW3-9UurHlASFy9A&s"
+                        class="card-img-top" alt="..." style="height: 100px; width: 100px;">
+                    <div class="card-body">
+                        <h3 class="card-heading">
+                            Manager
+                        </h3>
+                        <p class="card-text" id="subText">Managers oversee the day-to-day operations of the project, ensuring that
+                            tasks are delegated effectively, deadlines are met, and resources are allocated
+                            efficiently.Managers offer guidance and support to the team members.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 my-4">
+                <div class="card" style="width: 20rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsoEAMYKHiwI5JH_IlxayW3-9UurHlASFy9A&s"
+                        class="card-img-top" alt="..." style="height: 100px; width: 100px;">
+                    <div class="card-body">
+                        <h3 class="card-heading">
+                            Support Team
+                        </h3>
+                        <p class="card-text" id="subText">The support team provides expert guidance and technical
+                            assistance to ensure farmers can effectively utilize our tools and resources. They are
+                            dedicated to resolving issues promptly and enhancing the overall user experience for our
+                            agricultural community.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <h1 class="text-center my-4">locate us <i class="fa-solid fa-location-dot fa-2xl"
+                        style="color: #b03703;"></i></h1>
+            </div>
+            <div class="col">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.20878986365!2d73.85274257519158!3d18.519464682573908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c065144d8edf%3A0x3703b8095866c54b!2sShaniwar%20Wada!5e0!3m2!1sen!2sin!4v1714479421126!5m2!1sen!2sin"
+                    width="900" height="500" style="border:2px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+   <footer class="site-footer">
+        <div class="container rd-section-center">
+            <div class="site-footer-inner">
+                <nav>
+                    <ul class="footer-menu">
+                        <li class="mb-3"><b style="color: #369c1d; font-size: 30px;">Headquaters</b></li>
+                        <li></li>
+                        <li><a href="">Symboisis Distance Learning</a></li>
+                        <li><a href="">Ganeshkhindi road,</a></li>
+                        <li><a href="">Pune Maharashtra - 411011</a></li>
+                    </ul>
+                </nav>
+
+                <nav>
+                    <h2 class="mx-2 text-center" style="font-family: Arial, Helvetica, sans-serif;">Connect With Us</h2> <a href="tel:+7559436918" style="text-decoration: none;" class="text-center mb-2 mx-2 text-danger"><span style="font-size: 20px;">+91</span>-7559436918</a>
+                    <ul class="social-footer">
+                        
+                        <li>
+                            <div class="vr"></div>
+                            <i class="fa-brands fa-facebook mx-2"></i>
+                        </li>
+                        <li>
+                            <div class="vr"></div>
+                            <i class="fa-brands fa-instagram mx-2"></i>
+                        </li>
+                        <li>
+                            <div class="vr"></div>
+                            <i class="fa-brands fa-youtube mx-2"></i>
+                        </li>
+                        <li>
+                            <div class="vr"></div>
+                            <i class="fa-brands fa-google mx-2"></i>
+                        </li>
+                        <li>
+                            <div class="vr"></div>
+                            <i class="fa-brands fa-twitter mx-2"></i>
+
+                        </li>
+
+                    </ul>
+                    
+                </nav>
+            </div>
+            <div>
+                <hr class="divider text-light">
+            </div>
+            <div class="copyright"> <span>© 2024</span> <span>Crop Predict,Inc.</span><span> All rights
+                    reserved.</span> </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Select all elements with the class 'card-text'
+            var cardTexts = document.querySelectorAll('.card-text');
+            
+            // Loop through each element
+            cardTexts.forEach(function(cardText) {
+                var text = cardText.innerText;
+                console.log(text);
+                
+                // Truncate text if it's longer than 100 characters
+                if (text.length > 100) {
+                    cardText.innerText = text.substring(0, 100) + '...';
+                }
+            });
+        });
+
+
+
+        function loadGoogleTranslate() {
+        const script = document.createElement('script');
+        script.src = 'http://translate.google.com/translate_a/element.js?cb=initializeGoogleTranslate';
+        document.body.appendChild(script);
+    }
+
+    function initializeGoogleTranslate() {
+        new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,fr,es,hi,mr,pa,sd' }, 'google_element');
+    }
+
+    function setLanguage(langCode) {
+        google.translate.translate('en', langCode, function (translation) {
+            var element = document.getElementById('google_element');
+            if (element) {
+                element.innerHTML = translation.translatedText;
+            }
+        });
+    }
+
+    window.onload = loadGoogleTranslate;
+
+    </script>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybBogGzB6AWAc1K6X17f3zOfI58Pp6Uj0BijF5BhacQEH5L8k" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-qP1M0E/+HHk8cV0iILuPsw+dPOGFNA4MzWZQ+SHtEfvYFQf0xS3p8gsLAPL8OB8p" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-qP1M0E/+HHk8cV0iILuPsw+dPOGFNA4MzWZQ+SHtEfvYFQf0xS3p8gsLAPL8OB8p" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+=======
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>prediCrop - about</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e616f0ccb0.js" crossorigin="anonymous"></script>
+    <style>
+        .navbar {
+            position: -webkit-sticky;
+            /* For Safari */
+            position: sticky;
+            top: 0;
+            /* background-color: #636161; */
+            padding: 10px 0;
+            z-index: 1000;
+            /* Ensures the navbar is above other content */
+        }
+
+        .navbar-nav a:hover {
+            background-color: rgb(129, 132, 129);
+            border-bottom: 1px solid rgb(8, 8, 8);
+            color: black;
+            border-radius: 5px;
+        }
+
+        .nav-item a:hover {
+            border-bottom: 1px solid white;
+        }
+
+        .site-footer {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #252b32;
+            /* Example background color */
+            color: #fff;
+            /* Example text color */
+            padding: 20px 0;
+        }
+
+        .site-footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+
+        .social-footer {
+            display: flex;
+            gap: 15px;
+            /* Adjust spacing between items */
+        }
+
+        .footer-menu li,
+        .social-footer li {
+            list-style-type: none;
+        }
+
+        .footer-menu a,
+        .social-footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .social-footer i {
+            color: #fff;
+        }
+
+        .social-footer .icon {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-size: cover;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.1);
+            /* Optional: Change the border color of the button */
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+
+<body>
+     <nav class="navbar navbar-expand-lg bg-dark text-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="D:\ProjectCrop\index.html"
+                style="text-decoration: none; color: white; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                <i class="fa-solid fa-wheat-awn fa-2xl" style="color: #63E6BE;"></i> <span
+                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">predi</span>Crop
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item p-2">
+                        <a href="D:\ProjectCrop\approach.html" class="nav-link text-light"
+                            style="text-decoration: none;">Approach</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href="D:\ProjectCrop\about.html" class="nav-link text-light"
+                            style="text-decoration: none;">We are</a>
+                    </li>
+                    <li class="nav-item dropdown p-2">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" id="navbarDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="tel:7559436918"><i
+                                        class="fa-brands fa-pagelines fa-sm"></i> Crop
+                                    &nbsp;<button type="button" class="btn btn-primary"
+                                        style="--bs-btn-padding-y: .20rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .50rem;">
+                                        Call
+                                    </button></a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-regular fa-gem fa-sm"></i> Forest</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-globe fa-sm"></i> Land</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown p-2">
+                        <a class="nav-link dropdown-toggle text-light" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" href="#" id="dropdownMenuButton">
+                            Language
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div id="google_element"></div>
+                            
+                        </ul>
+                    </li>
+                    <li class="nav-item p-2">
+                      <a href="D:\ProjectCrop\options.html" class="nav-link text-danger"
+                      style="text-decoration: none;">Predict</a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <h1 class="p-2 text-center my-3">Who we are</h1>
+    <div class="container my-4 bg-dark text-light border rounded p-2 my-4">
+        <div class="row my-3 p-3">
+            <div class="row my-4"></div>
+            <div class="col flex-column text-center">
+                <img src="logo.jpg" alt="" srcset="" class=" rounded-circle">
+            </div>
+            <div class="col text-center">
+                <h1 class="text-center my-1 mb-2">
+                    About
+                </h1>
+                We are doing best with our farmers,This website will help you to better understand which type of
+                fertilizer do you need to grow crops, also help to forecaste and more knowldege and <a
+                    href="D:\ProjectCrop\help.html" style="text-decoration: none;">HELP</a> also!
+            </div>
+        </div>
+    </div>
+    <div class="container my-4">
+        <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+           WORKING POSTS
+        </h2>
+        <div class="row">
+
+            <div class="col-4 my-4">
+                <div class="card" style="width: 20rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsoEAMYKHiwI5JH_IlxayW3-9UurHlASFy9A&s"
+                        class="card-img-top" alt="..." style="height: 100px; width: 100px;">
+                    <div class="card-body">
+                        <h3 class="card-heading">
+                            Project Manager
+                        </h3>
+                        <p class="card-text" id="subText">The project manager ensures seamless coordination among team members and
+                            oversees the timely execution of tasks to enhance agricultural productivity and
+                            sustainability.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 my-4">
+                <div class="card" style="width: 20rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsoEAMYKHiwI5JH_IlxayW3-9UurHlASFy9A&s"
+                        class="card-img-top" alt="..." style="height: 100px; width: 100px;">
+                    <div class="card-body">
+                        <h3 class="card-heading">
+                            Team Lead
+                        </h3>
+                        <p class="card-text" id="subText">Consistently demonstrated exceptional ability to identify and resolve
+                            challenges, ensuring the successful deployment of innovative solutions to assist farmers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 my-4">
+                <div class="card" style="width: 20rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsoEAMYKHiwI5JH_IlxayW3-9UurHlASFy9A&s"
+                        class="card-img-top" alt="..." style="height: 100px; width: 100px;">
+                    <div class="card-body">
+                        <h3 class="card-heading">
+                            Developer
+                        </h3>
+                        <p class="card-text" id="subText">Developed a responsive, user-friendly web interface for an agricultural
+                            assistance application. Integrated interactive elements such as toasts to guide users and
+                            dynamically enable features based on user interactions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 my-4">
+                <div class="card" style="width: 20rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsoEAMYKHiwI5JH_IlxayW3-9UurHlASFy9A&s"
+                        class="card-img-top" alt="..." style="height: 100px; width: 100px;">
+                    <div class="card-body">
+                        <h3 class="card-heading">
+                            Tester
+                        </h3>
+                        <p class="card-text" id="subText">Ensure that the prediction and suggestion buttons are only enabled after
+                            the corresponding information toast has been read and displayed to the user.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 my-4">
+                <div class="card" style="width: 20rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsoEAMYKHiwI5JH_IlxayW3-9UurHlASFy9A&s"
+                        class="card-img-top" alt="..." style="height: 100px; width: 100px;">
+                    <div class="card-body">
+                        <h3 class="card-heading">
+                            Manager
+                        </h3>
+                        <p class="card-text" id="subText">Managers oversee the day-to-day operations of the project, ensuring that
+                            tasks are delegated effectively, deadlines are met, and resources are allocated
+                            efficiently.Managers offer guidance and support to the team members.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 my-4">
+                <div class="card" style="width: 20rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsoEAMYKHiwI5JH_IlxayW3-9UurHlASFy9A&s"
+                        class="card-img-top" alt="..." style="height: 100px; width: 100px;">
+                    <div class="card-body">
+                        <h3 class="card-heading">
+                            Support Team
+                        </h3>
+                        <p class="card-text" id="subText">The support team provides expert guidance and technical
+                            assistance to ensure farmers can effectively utilize our tools and resources. They are
+                            dedicated to resolving issues promptly and enhancing the overall user experience for our
+                            agricultural community.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <h1 class="text-center my-4">locate us <i class="fa-solid fa-location-dot fa-2xl"
+                        style="color: #b03703;"></i></h1>
+            </div>
+            <div class="col">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.20878986365!2d73.85274257519158!3d18.519464682573908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c065144d8edf%3A0x3703b8095866c54b!2sShaniwar%20Wada!5e0!3m2!1sen!2sin!4v1714479421126!5m2!1sen!2sin"
+                    width="900" height="500" style="border:2px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+   <footer class="site-footer">
+        <div class="container rd-section-center">
+            <div class="site-footer-inner">
+                <nav>
+                    <ul class="footer-menu">
+                        <li class="mb-3"><b style="color: #369c1d; font-size: 30px;">Headquaters</b></li>
+                        <li></li>
+                        <li><a href="">Symboisis Distance Learning</a></li>
+                        <li><a href="">Ganeshkhindi road,</a></li>
+                        <li><a href="">Pune Maharashtra - 411011</a></li>
+                    </ul>
+                </nav>
+
+                <nav>
+                    <h2 class="mx-2 text-center" style="font-family: Arial, Helvetica, sans-serif;">Connect With Us</h2> <a href="tel:+7559436918" style="text-decoration: none;" class="text-center mb-2 mx-2 text-danger"><span style="font-size: 20px;">+91</span>-7559436918</a>
+                    <ul class="social-footer">
+                        
+                        <li>
+                            <div class="vr"></div>
+                            <i class="fa-brands fa-facebook mx-2"></i>
+                        </li>
+                        <li>
+                            <div class="vr"></div>
+                            <i class="fa-brands fa-instagram mx-2"></i>
+                        </li>
+                        <li>
+                            <div class="vr"></div>
+                            <i class="fa-brands fa-youtube mx-2"></i>
+                        </li>
+                        <li>
+                            <div class="vr"></div>
+                            <i class="fa-brands fa-google mx-2"></i>
+                        </li>
+                        <li>
+                            <div class="vr"></div>
+                            <i class="fa-brands fa-twitter mx-2"></i>
+
+                        </li>
+
+                    </ul>
+                    
+                </nav>
+            </div>
+            <div>
+                <hr class="divider text-light">
+            </div>
+            <div class="copyright"> <span>© 2024</span> <span>Crop Predict,Inc.</span><span> All rights
+                    reserved.</span> </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Select all elements with the class 'card-text'
+            var cardTexts = document.querySelectorAll('.card-text');
+            
+            // Loop through each element
+            cardTexts.forEach(function(cardText) {
+                var text = cardText.innerText;
+                console.log(text);
+                
+                // Truncate text if it's longer than 100 characters
+                if (text.length > 100) {
+                    cardText.innerText = text.substring(0, 100) + '...';
+                }
+            });
+        });
+
+
+
+        function loadGoogleTranslate() {
+        const script = document.createElement('script');
+        script.src = 'http://translate.google.com/translate_a/element.js?cb=initializeGoogleTranslate';
+        document.body.appendChild(script);
+    }
+
+    function initializeGoogleTranslate() {
+        new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,fr,es,hi,mr,pa,sd' }, 'google_element');
+    }
+
+    function setLanguage(langCode) {
+        google.translate.translate('en', langCode, function (translation) {
+            var element = document.getElementById('google_element');
+            if (element) {
+                element.innerHTML = translation.translatedText;
+            }
+        });
+    }
+
+    window.onload = loadGoogleTranslate;
+
+    </script>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybBogGzB6AWAc1K6X17f3zOfI58Pp6Uj0BijF5BhacQEH5L8k" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-qP1M0E/+HHk8cV0iILuPsw+dPOGFNA4MzWZQ+SHtEfvYFQf0xS3p8gsLAPL8OB8p" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-qP1M0E/+HHk8cV0iILuPsw+dPOGFNA4MzWZQ+SHtEfvYFQf0xS3p8gsLAPL8OB8p" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+>>>>>>> 0e85c04 (Initial commit)
+</html>
